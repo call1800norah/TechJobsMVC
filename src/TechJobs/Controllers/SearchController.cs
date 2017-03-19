@@ -35,8 +35,7 @@ namespace TechJobs.Controllers
             else
             {
                 jobs = JobData.FindByColumnAndValue(searchType, searchTerm);
-               // ViewBag.searchTerm = searchTerm;
-                //ViewBag.searchType = searchType;
+                ViewBag.jobs = jobs;
                 return View("Index");
             }
                   

@@ -38,21 +38,28 @@
             <tbody>
                 @foreach (KeyValuePair<string, string> values in job)
                 {
-                    <tr>
-                        <td>@values.Key</td>:<td>@values.Value</td>
-                        
-                    </tr>
-
+                <tr>
+                    <td>@values.Key</td>
+                    <td>@values.Value</td>
+                </tr>
                 }
             </tbody>
         </table>
     }
-            @if (ViewBag.jobs.Count == 0)
-            {
-                <h3>No jobs found</h3>
-            }
+    @if (ViewBag.jobs.Count == 0)
+    {
 
+        <h3>No jobs found</h3>
+    }
 }
+
+
+   
+
+
+
+
+
 
 
 
